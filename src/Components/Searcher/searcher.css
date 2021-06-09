@@ -1,0 +1,54 @@
+
+
+.container-search{
+    height: 100vh;
+    width: 100%;
+    object-fit: contain;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.363);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+ 
+h1{
+    font-size:9rem; 
+    padding:20px;
+    letter-spacing: 2px;
+}
+
+span{
+    color:#f50004;
+}
+
+input{
+    width: 30%;
+    height: 7vh;
+    border-radius: 33px;
+    border:0;
+    outline: none;
+    font-size: 30px;
+    text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+    .container-search h1 {
+      font-size: 60px;
+      text-align: center;
+    }
+  
+    input {
+      text-align: center;
+      font-size: 22px;
+      width: 85%;
+    }
+  }
