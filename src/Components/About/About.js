@@ -27,21 +27,19 @@ const About = () => {
 
             <section className="container-info">
                 <article className="information">
-                    <header>
-                        <h3>¿que podras encontrar?</h3>
-                    </header>
+                    <h3>¿what can you find?</h3>
                     <ul>
-                        <li>Series</li>
-                        <li>Peliculas</li>
-                        <li>Informacion detallada</li>
-                        <li>Novedades en cartelera</li>
-                        <li>las mejores peliculas del momento</li>
+                        <li>series</li>
+                        <li>films</li>
+                        <li>detailed information</li>
+                        <li>news on billboard</li>
+                        <li>the best movies of the moment</li>
                     </ul>
                 </article>
 
-                <article className="img-box">
+                <figure className="img-box">
                     <img src={img}></img>
-                </article>
+                </figure>
             </section>
 
         </div>

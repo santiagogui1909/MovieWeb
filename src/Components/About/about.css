@@ -39,6 +39,7 @@ button:hover{
 	color: #000000;
 	text-decoration: none;
     cursor: pointer;
+    padding: 25px;
 }
 
 /* contenedor imagen e lista informacion */
@@ -47,12 +48,13 @@ button:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin:40px;
 }
 
 .information{
     padding: 80px;
-    width: 60%;
+    width: 40%;
 }
 
 
@@ -63,11 +65,19 @@ h3{
     padding:0px 0 50px 0;
 }
 
+h3::first-letter{
+    text-transform: capitalize;   
+ }
+
 .information ul li{
     color: #FFFF;
     font-size: 28px;
     line-height : 50px;
     
+}
+
+.information ul li::first-letter{
+   text-transform: capitalize;   
 }
 
 .information ul {
@@ -77,7 +87,7 @@ h3{
 /* contenido imagen */
 
 .img-box{
-    width: 50%;
+    width: 30%;
     padding:70px;
 }
 
