@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/MovieWeb/static/css/main.0df4fdf2.chunk.css",
+    "main.js": "/MovieWeb/static/js/main.8bce74fd.chunk.js",
+    "main.js.map": "/MovieWeb/static/js/main.8bce74fd.chunk.js.map",
+    "runtime-main.js": "/MovieWeb/static/js/runtime-main.783a4dd0.js",
+    "runtime-main.js.map": "/MovieWeb/static/js/runtime-main.783a4dd0.js.map",
+    "static/js/2.4c92b250.chunk.js": "/MovieWeb/static/js/2.4c92b250.chunk.js",
+    "static/js/2.4c92b250.chunk.js.map": "/MovieWeb/static/js/2.4c92b250.chunk.js.map",
+    "index.html": "/MovieWeb/index.html",
+    "static/css/main.0df4fdf2.chunk.css.map": "/MovieWeb/static/css/main.0df4fdf2.chunk.css.map",
+    "static/js/2.4c92b250.chunk.js.LICENSE.txt": "/MovieWeb/static/js/2.4c92b250.chunk.js.LICENSE.txt",
+    "static/media/Logo-FilmWeb.4ed8c930.png": "/MovieWeb/static/media/Logo-FilmWeb.4ed8c930.png",
+    "static/media/cine.c7ad38d5.svg": "/MovieWeb/static/media/cine.c7ad38d5.svg",
+    "static/media/about.css": "/MovieWeb/static/media/claqueta.8abc2d92.svg",
+    "static/media/fontello.css": "/MovieWeb/static/media/fontello.fd1bd8d5.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.783a4dd0.js",
+    "static/js/2.4c92b250.chunk.js",
+    "static/css/main.0df4fdf2.chunk.css",
+    "static/js/main.8bce74fd.chunk.js"
+  ]
+}
