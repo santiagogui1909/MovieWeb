@@ -1,0 +1,99 @@
+.title-films{
+    color: rgb(255, 255, 255);
+    margin-top:100px;
+    font-size:40px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.list {
+    margin: 10px 0px 0 88px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}
+
+.container-cards {
+    padding: 8px;
+    width: 180px;
+    height: 280px;
+    background: #fff;
+    margin: 50px;
+    box-shadow: 0px 8px 14px #bd1117;
+    transition: 1.5s;
+    cursor: pointer;
+}
+
+.container-cards:hover {
+    margin-top: 1px;
+    box-shadow: 0px 8px 14px #000000;
+}
+
+.container-cards label {
+    padding: 4px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    z-index: 1;
+    background: #ec0004;
+    border-radius: 0 1px 14px 1px;
+}
+
+.title {
+    position: relative;
+    top: 280px;
+    color: #F5F3F4;
+    font-size: 15px;
+    text-align: center;
+}
+
+.container-cards img {
+    width: 180px;
+    height: 280px;
+    z-index: 1;
+}
+
+.box-buttons {
+    text-align: center;
+    margin: 40px;
+}
+
+.box-buttons button {
+    padding: 18px;
+    background: #bd1117;
+    border: none;
+    font-size: 1em;
+    color: #F5F3F4;
+    text-transform: capitalize;
+    transition: all 0.4s;
+}
+
+.box-buttons label {
+    margin: 35px;
+    color: #F5F3F4;
+    font-size: 1.5em;
+}
+
+.box-buttons button:hover {
+    background: rgb(255, 255, 255);
+    color: #e9050d;
+}
+
+
+@media screen and (max-width: 780px) {
+
+    .list {
+        margin: 160px 0px 0 40px;
+    }
+
+    .title {
+        position: relative;
+        top: 280px;
+        color: #F5F3F4;
+        font-size: 18px;
+        text-align: center;
+    }
+}

@@ -1,3 +1,6 @@
+.about{
+    margin: 50px;
+}
 
 .box-about{
     background:#fff;
@@ -5,7 +8,7 @@
 }
 
 h2{
-    padding: 50px;
+    padding: 60px;
     color: #A4161A;
     text-align: center;
     font-size: 60px;
@@ -22,24 +25,16 @@ p{
     text-align: center;
 }
 
-button{
+.btn-ranking button{
     padding:20px;
     font-size: 20px;
     color: #fff;
     background:#BA181B;
     border: none;
-    border: 0.125rem solid #BA181B;
-	border-radius: 0.25rem;
-	text-decoration: none;
-	transition: all 0.2s;
 }
 
-button:hover{
-    background-color: transparent;
-	color: #000000;
-	text-decoration: none;
-    cursor: pointer;
-    padding: 25px;
+.btn-ranking button:hover{
+    background-color: black;
 }
 
 /* contenedor imagen e lista informacion */
@@ -97,3 +92,71 @@ h3::first-letter{
     transform: rotate(-13deg);
 }
 
+
+@media screen and (max-width: 780px){
+    .box-about{
+        background:#fff;
+        padding:5px;
+    }
+
+    h2{
+        padding: 24px;
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+    
+    p{
+        padding: 20px;
+        font-size:18px;
+
+    }
+
+    .btn-ranking button{
+        padding:15px;
+        font-size: 14px;
+    }
+    
+    .btn-ranking button:hover{
+        background-color: black;
+    }
+    
+    /* contenedor imagen e lista informacion */
+    
+    .container-info{
+        margin:0px;
+    }
+    
+    .information{
+        width: 100%;
+    }
+    
+    
+    h3{
+        font-size: 24px;
+    }
+    
+    h3::first-letter{
+        text-transform: capitalize;   
+     }
+    
+    .information ul li{
+        color: #FFFF;
+        font-size: 14px;
+        line-height : 50px;
+    }
+    
+    /* contenido imagen */
+
+    .img-box{
+        padding:10px;
+    }
+    
+    .img-box img{
+        position: relative;
+        top: -60px;
+        left: -50px;
+        width: 220px;
+        height: 250px;
+        transform: rotate(-13deg);
+    }
+}

@@ -1,0 +1,30 @@
+.table-ranking{
+    margin: 50px;
+    display: flex;
+    justify-content:center;
+}
+
+.title-table-ranking h3{
+    padding-top: 90px;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+}
+
+table {
+    text-align: center;
+    color: #fff;
+}
+
+th{
+    color: #fff;
+    padding: 15px 80px 15px 80px;
+    font-size: 22px;
+    background: rgb(255, 0, 0);
+    text-transform: uppercase;
+}
+
+td{
+    padding: 14px;
+    border: 2px solid rgb(255, 255, 255);
+}

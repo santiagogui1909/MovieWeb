@@ -1,3 +1,5 @@
+import logo from "../../images/Logo-FilmWeb.png";
+
 import "./footer.css";
 
 const Footer = () => {
@@ -5,7 +7,7 @@ const Footer = () => {
         <>
         <footer>
             <div className="footer-logo">
-                <img src="https://archlinux.org/static/logos/archlinux-logo-black-90dpi.0c696e9c0d84.png"></img>
+                <img src={logo}></img>
             </div>
             <section className="box-social-network">
                 <h4>follow me</h4>
