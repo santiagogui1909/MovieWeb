@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.fcad6d32.chunk.css",
-    "main.js": "/static/js/main.8bce74fd.chunk.js",
-    "main.js.map": "/static/js/main.8bce74fd.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.cc1c3bb6.js",
-    "runtime-main.js.map": "/static/js/runtime-main.cc1c3bb6.js.map",
-    "static/js/2.4c92b250.chunk.js": "/static/js/2.4c92b250.chunk.js",
-    "static/js/2.4c92b250.chunk.js.map": "/static/js/2.4c92b250.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.fcad6d32.chunk.css.map": "/static/css/main.fcad6d32.chunk.css.map",
-    "static/js/2.4c92b250.chunk.js.LICENSE.txt": "/static/js/2.4c92b250.chunk.js.LICENSE.txt",
-    "static/media/Logo-FilmWeb.4ed8c930.png": "/static/media/Logo-FilmWeb.4ed8c930.png",
-    "static/media/cine.c7ad38d5.svg": "/static/media/cine.c7ad38d5.svg",
-    "static/media/about.css": "/static/media/claqueta.8abc2d92.svg",
-    "static/media/fontello.css": "/static/media/fontello.fd1bd8d5.svg"
+    "main.css": "/santiagogui1909/MovieWeb.git/static/css/main.d502b1ab.chunk.css",
+    "main.js": "/santiagogui1909/MovieWeb.git/static/js/main.f5d2e123.chunk.js",
+    "main.js.map": "/santiagogui1909/MovieWeb.git/static/js/main.f5d2e123.chunk.js.map",
+    "runtime-main.js": "/santiagogui1909/MovieWeb.git/static/js/runtime-main.703847aa.js",
+    "runtime-main.js.map": "/santiagogui1909/MovieWeb.git/static/js/runtime-main.703847aa.js.map",
+    "static/js/2.4c92b250.chunk.js": "/santiagogui1909/MovieWeb.git/static/js/2.4c92b250.chunk.js",
+    "static/js/2.4c92b250.chunk.js.map": "/santiagogui1909/MovieWeb.git/static/js/2.4c92b250.chunk.js.map",
+    "index.html": "/santiagogui1909/MovieWeb.git/index.html",
+    "static/css/main.d502b1ab.chunk.css.map": "/santiagogui1909/MovieWeb.git/static/css/main.d502b1ab.chunk.css.map",
+    "static/js/2.4c92b250.chunk.js.LICENSE.txt": "/santiagogui1909/MovieWeb.git/static/js/2.4c92b250.chunk.js.LICENSE.txt",
+    "static/media/Logo-FilmWeb.4ed8c930.png": "/santiagogui1909/MovieWeb.git/static/media/Logo-FilmWeb.4ed8c930.png",
+    "static/media/cine.c7ad38d5.svg": "/santiagogui1909/MovieWeb.git/static/media/cine.c7ad38d5.svg",
+    "static/media/about.css": "/santiagogui1909/MovieWeb.git/static/media/claqueta.8abc2d92.svg",
+    "static/media/fontello.css": "/santiagogui1909/MovieWeb.git/static/media/fontello.fd1bd8d5.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.cc1c3bb6.js",
+    "static/js/runtime-main.703847aa.js",
     "static/js/2.4c92b250.chunk.js",
-    "static/css/main.fcad6d32.chunk.css",
-    "static/js/main.8bce74fd.chunk.js"
+    "static/css/main.d502b1ab.chunk.css",
+    "static/js/main.f5d2e123.chunk.js"
   ]
 }
