@@ -5,17 +5,17 @@ footer{
     flex-wrap: wrap;
     justify-content: space-between;
     background: #F5F3F4;
-    padding: 60px;
+    padding: 80px;
 }
 
 .footer-logo{
-    width: 30%;
+    width: 28%;
 }
 
 .footer-logo img{
-    padding:60px;
-    width:300px;
-    height:100px;
+    padding:55px 0 0 0;
+    width:320px;
+    height:120px;
     z-index: 1;
 }
 
@@ -63,12 +63,12 @@ footer{
     transition: all 0.6s;
     text-transform:capitalize;
     background:#c30505;
-    padding:10px;
+    padding:14px;
     border-radius:20px;
 }
 
 .box-gmail a:hover{
-    font-size:24px;
+    font-size:22px;
 }
 
 .box-gmail span{
@@ -108,7 +108,7 @@ h4::first-letter{
     background:#0B090A;
 }
 
-@media screen and (max-width: 780px){
+@media screen and (max-width: 800px){
     footer{
         display: flex;
         flex-direction: row;

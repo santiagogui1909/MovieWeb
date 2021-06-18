@@ -21,9 +21,10 @@ p{
     color: rgb(0, 0, 0);
 }
 
-.btn-ranking{
+.btn-ranking {
     text-align: center;
 }
+
 
 .btn-ranking button{
     padding:20px;
@@ -93,10 +94,10 @@ h3::first-letter{
 }
 
 
-@media screen and (max-width: 780px){
+@media screen and (max-width: 800px){
     .box-about{
         background:#fff;
-        padding:5px;
+        padding:15px;
     }
 
     h2{
@@ -112,7 +113,7 @@ h3::first-letter{
     }
 
     .btn-ranking button{
-        padding:15px;
+        padding:20px;
         font-size: 14px;
     }
     
@@ -128,11 +129,12 @@ h3::first-letter{
     
     .information{
         width: 100%;
+        padding:30px;
     }
     
     
     h3{
-        font-size: 24px;
+        font-size: 28px;
     }
     
     h3::first-letter{
@@ -141,22 +143,22 @@ h3::first-letter{
     
     .information ul li{
         color: #FFFF;
-        font-size: 14px;
+        font-size: 18px;
         line-height : 50px;
     }
     
     /* contenido imagen */
 
     .img-box{
-        padding:10px;
+        padding:15px;
     }
     
     .img-box img{
         position: relative;
-        top: -60px;
-        left: -50px;
-        width: 220px;
-        height: 250px;
+        top: 0px;
+        right: 70px;
+        width: 230px;
+        height: 260px;
         transform: rotate(-13deg);
     }
 }

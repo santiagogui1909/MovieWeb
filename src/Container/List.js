@@ -40,7 +40,7 @@ const RenderApi = () => {
             </header>
             <div className="list">
                 {movies.map((movie) => {
-                    return <Films movie={movie} />
+                    return <Films movie={movie}/>
                 })}
             </div>
             <Pagination

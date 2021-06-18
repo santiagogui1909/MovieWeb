@@ -20,7 +20,7 @@ const Ranking = () => {
     return (
         <>
             <header className="title-table-ranking">
-                <h3>ranking</h3>
+                <h3>ranking 🏆</h3>
             </header>
             <div className="table-ranking">
                 <table>
@@ -28,14 +28,14 @@ const Ranking = () => {
                         <th>film</th>
                         <th>score</th>
                         <th>popularity</th>
-                        <th>vote count</th>
+                        <th>release date</th>
                     </tr>
                     {rankings.map((ranking) => {
                         return (<tr key={ranking.id}>
                             <td>{ranking.title}</td>
                             <td>{ranking.vote_average} ⭐</td>
                             <td>{ranking.popularity}</td>
-                            <td>{ranking.vote_count}</td>
+                            <td>{ranking.release_date.split('-').reverse().join('/')}</td>
                         </tr>)
                     })}
                 </table>

@@ -16,7 +16,7 @@ img {
 
 h1 {
   text-align: center;
-  font-size: 7rem;
+  font-size: 8rem;
   padding-top: 130px;
   letter-spacing: 2px;
   text-transform: capitalize;
@@ -76,7 +76,7 @@ input {
   display: flex;
   justify-content: center;
   padding:60px;
-  font-size:54px;
+  font-size:48px;
   transform: rotate(180deg);
   animation-duration: 2.2s;
   animation-direction: normal;
@@ -131,7 +131,7 @@ input {
   box-shadow: 8px 8px 0px #f60000c4;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 800px) {
   .listSearch label {
     color: #fff;
     padding: 80px 0 0 80px;
@@ -166,7 +166,7 @@ input {
 
   input {
     text-align: center;
-    font-size: 22px;
+    font-size: 15px;
     width: 85%;
   }
 
@@ -183,4 +183,49 @@ input {
     height: 335px;
     z-index: 1;
   }
+
+  .icon-up-open{
+    display: flex;
+    justify-content: center;
+    padding:60px;
+    font-size:45px;
+    transform: rotate(180deg);
+    animation-duration: 2.2s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-name: slidein;
+    text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.1em;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-top: 0%;
+    }
+  
+    to {
+      margin-top:22%;
+    }
+  }
 }
+
+
+/* @media screen and (min-width: 1600px) {
+  .list {
+      margin: 10px 0px 0 52px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      max-width: 1800px;
+  }
+
+  .container-cards {
+      padding: 8px;
+      width: 180px;
+      height: 280px;
+      background: #fff;
+      margin: 50px;
+      box-shadow: 0px 8px 14px #bd1117;
+      transition: 1.5s;
+      cursor: pointer;
+  }
+} */

@@ -1,4 +1,4 @@
-import logo from "../../images/Logo-FilmWeb.png";
+import logo from "../../images/logo-web-film.svg";
 
 import "./footer.css";
 

@@ -73,11 +73,11 @@ html{
     color: red;
 }
 
-ul li:hover{
+nav ul li:hover{
     color:red;
 }
 
-ul li span {
+nav ul li span {
     padding-right:5px;
     font-size:20px;
 }
