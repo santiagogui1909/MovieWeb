@@ -1,3 +1,6 @@
+.about{
+    margin: 50px;
+}
 
 .box-about{
     background:#fff;
@@ -5,7 +8,7 @@
 }
 
 h2{
-    padding: 50px;
+    padding: 60px;
     color: #A4161A;
     text-align: center;
     font-size: 60px;
@@ -18,27 +21,21 @@ p{
     color: rgb(0, 0, 0);
 }
 
-.btn-ranking{
+.btn-ranking {
     text-align: center;
 }
 
-button{
+
+.btn-ranking button{
     padding:20px;
     font-size: 20px;
     color: #fff;
     background:#BA181B;
     border: none;
-    border: 0.125rem solid #BA181B;
-	border-radius: 0.25rem;
-	text-decoration: none;
-	transition: all 0.2s;
 }
 
-button:hover{
-    background-color: transparent;
-	color: #000000;
-	text-decoration: none;
-    cursor: pointer;
+.btn-ranking button:hover{
+    background-color: black;
 }
 
 /* contenedor imagen e lista informacion */
@@ -47,12 +44,13 @@ button:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin:40px;
 }
 
 .information{
     padding: 80px;
-    width: 60%;
+    width: 40%;
 }
 
 
@@ -63,11 +61,19 @@ h3{
     padding:0px 0 50px 0;
 }
 
+h3::first-letter{
+    text-transform: capitalize;   
+ }
+
 .information ul li{
     color: #FFFF;
     font-size: 28px;
     line-height : 50px;
     
+}
+
+.information ul li::first-letter{
+   text-transform: capitalize;   
 }
 
 .information ul {
@@ -77,7 +83,7 @@ h3{
 /* contenido imagen */
 
 .img-box{
-    width: 50%;
+    width: 30%;
     padding:70px;
 }
 
@@ -87,3 +93,72 @@ h3{
     transform: rotate(-13deg);
 }
 
+
+@media screen and (max-width: 800px){
+    .box-about{
+        background:#fff;
+        padding:15px;
+    }
+
+    h2{
+        padding: 24px;
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+    
+    p{
+        padding: 20px;
+        font-size:18px;
+
+    }
+
+    .btn-ranking button{
+        padding:20px;
+        font-size: 14px;
+    }
+    
+    .btn-ranking button:hover{
+        background-color: black;
+    }
+    
+    /* contenedor imagen e lista informacion */
+    
+    .container-info{
+        margin:0px;
+    }
+    
+    .information{
+        width: 100%;
+        padding:30px;
+    }
+    
+    
+    h3{
+        font-size: 28px;
+    }
+    
+    h3::first-letter{
+        text-transform: capitalize;   
+     }
+    
+    .information ul li{
+        color: #FFFF;
+        font-size: 18px;
+        line-height : 50px;
+    }
+    
+    /* contenido imagen */
+
+    .img-box{
+        padding:15px;
+    }
+    
+    .img-box img{
+        position: relative;
+        top: 0px;
+        right: 70px;
+        width: 230px;
+        height: 260px;
+        transform: rotate(-13deg);
+    }
+}

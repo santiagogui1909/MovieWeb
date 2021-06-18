@@ -1,5 +1,7 @@
-import img from '../../images/cine.svg'
+import { BrowserRouter as Switch,Route,Link } from 'react-router-dom';
+import Ranking from "../Ranking/Ranking";
 
+import img from '../../images/cine.svg';
 import "./about.css";
 
 const About = () => {
@@ -12,38 +14,35 @@ const About = () => {
             <section className="box-about">
                 <article>
                     <p>MovieWeb is a page where you can search for movies and find information
-                about them, duration, score, year of release.
-                
-                It has a ranking section to know the best movies to date, keep you updated
-                on all the new series and movie releases.</p>
+                        about them, duration, score, year of release.
+
+                        It has a ranking section to know the best movies to date, keep you updated
+                        on all the new series and movie releases.</p>
                 </article>
 
                 <div className="btn-ranking">
-                    <button><a>see ranking</a></button>
-            </div>
+                <Link to="/Ranking"><button>see ranking</button></Link>
+                </div>
+                <Switch>
+                    <Route path="/Ranking" component={Ranking} exact />
+                </Switch>
             </section>
-
-            
-
             <section className="container-info">
                 <article className="information">
-                    <header>
-                        <h3>¿que podras encontrar?</h3>
-                    </header>
+                    <h3>¿what can you find?</h3>
                     <ul>
-                        <li>Series</li>
-                        <li>Peliculas</li>
-                        <li>Informacion detallada</li>
-                        <li>Novedades en cartelera</li>
-                        <li>las mejores peliculas del momento</li>
+                        <li>series</li>
+                        <li>films</li>
+                        <li>detailed information</li>
+                        <li>news on billboard</li>
+                        <li>the best movies of the moment</li>
                     </ul>
                 </article>
 
-                <article className="img-box">
+                <figure className="img-box">
                     <img src={img}></img>
-                </article>
+                </figure>
             </section>
-
         </div>
     );
 };

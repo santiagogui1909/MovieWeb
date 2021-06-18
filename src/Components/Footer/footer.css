@@ -1,0 +1,208 @@
+
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #F5F3F4;
+    padding: 80px;
+}
+
+.footer-logo{
+    width: 28%;
+}
+
+.footer-logo img{
+    padding:55px 0 0 0;
+    width:320px;
+    height:120px;
+    z-index: 1;
+}
+
+.box-social-network{
+    width:30%;
+}
+
+.box-social-network h4{
+    color: #BA181B;
+    font-size:35px;
+    text-align: center;
+    padding-bottom: 40px;
+    text-decoration: underline #161A1D;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.icons span {
+    padding:10px;
+    font-size: 30px;
+    text-decoration: none;
+    background: #0B090A;
+    color: #F5F3F4;
+    border-radius:30px;
+    transition: all 0.3s;
+}
+
+.icons span:hover {
+    box-shadow: 0px 6px #c30505;
+    color:#BA181B;
+}
+
+.box-gmail{
+    text-align: center;
+    padding-top:70px;
+}
+
+.box-gmail a {
+    font-size:20px;
+    text-decoration: none;
+    color: #fdfdfd;
+    transition: all 0.6s;
+    text-transform:capitalize;
+    background:#c30505;
+    padding:14px;
+    border-radius:20px;
+}
+
+.box-gmail a:hover{
+    font-size:22px;
+}
+
+.box-gmail span{
+    color: #fff;
+    padding:10px;
+    font-size: 22px;
+}
+
+.box-github{
+    width:28%;
+    text-align: center;
+}
+
+h4::first-letter{
+    text-transform: capitalize;
+}
+
+.box-github h4{
+    color: #BA181B;
+    font-size:28px;
+}
+
+.box-github span {
+    color:black;
+    font-size:80px;
+}
+
+.box-github span:hover {
+    font-size:90px;
+    transition: all 0.80s;
+}
+
+.copy p{
+    font-size:15px;
+    text-align: center;
+    color: #F5F3F4;
+    background:#0B090A;
+}
+
+@media screen and (max-width: 800px){
+    footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background: #F5F3F4;
+        padding: 20px;
+    }
+    
+    .footer-logo img{
+        padding:50px 10px 80px 10px;
+        width:80px;
+        height:20px;
+        z-index: 1;
+    }
+
+    .box-social-network h4{
+        color: #BA181B;
+        font-size:16px;
+        text-align: center;
+        padding-bottom: 20px;
+        text-decoration: underline #161A1D;
+    }
+    
+    .icons {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .icons span {
+        padding:5px;
+        font-size: 10px;
+        text-decoration: none;
+        background: #0B090A;
+        color: #F5F3F4;
+        border-radius:30px;
+        transition: all 0.3s;
+    }
+    
+    .icons span:hover {
+        box-shadow: 0px 6px #c30505;
+        color:#BA181B;
+    }
+    
+    .box-gmail{
+        text-align: center;
+        padding-top:30px;
+    }
+    
+    .box-gmail a {
+        font-size:10px;
+        text-decoration: none;
+        color: #fdfdfd;
+        transition: all 0.6s;
+        text-transform:capitalize;
+        background:#c30505;
+        padding:10px;
+        border-radius:20px;
+    }
+    
+    .box-gmail a:hover{
+        font-size:8px;
+    }
+    
+    .box-gmail span{
+        color: #fff;
+        padding:5px;
+        font-size: 10px;
+    }
+    
+    h4::first-letter{
+        text-transform: capitalize;
+    }
+    
+    .box-github h4{
+        padding:2px 10px 0px 10px;
+        color: #BA181B;
+        font-size:12px;
+    }
+    
+    .box-github span {
+        color:black;
+        font-size:40px;
+    }
+    
+    .box-github span:hover {
+        font-size:50px;
+        transition: all 0.80s;
+    }
+    
+    .copy p{
+        font-size:13px;
+        text-align: center;
+        color: #F5F3F4;
+        background:#0B090A;
+    }
+}
