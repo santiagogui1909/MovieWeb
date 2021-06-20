@@ -1,5 +1,3 @@
-import { BrowserRouter as Switch,Route,Link } from 'react-router-dom';
-import Ranking from "../Ranking/Ranking";
 
 import img from '../../images/cine.svg';
 import "./about.css";
@@ -21,11 +19,8 @@ const About = () => {
                 </article>
 
                 <div className="btn-ranking">
-                <Link to="/Ranking"><button>see ranking</button></Link>
+                    <a href="/Ranking"><button>see ranking</button></a>
                 </div>
-                <Switch>
-                    <Route path="/Ranking" component={Ranking} exact />
-                </Switch>
             </section>
             <section className="container-info">
                 <article className="information">

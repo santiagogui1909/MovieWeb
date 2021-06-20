@@ -13,7 +13,6 @@ const Footer = () => {
                 <h4>follow me</h4>
                 <article className="icons">
                     <a href="https://www.instagram.com/santiagogr19/" target="_blank"><span className="icon-instagram"></span></a>
-                    <a href="" target="_blank"><span className="icon-facebook"></span></a>
                     <a href="https://www.linkedin.com/in/santiago-guillen-ramirez-b162211a7/" target="_blank"><span className="icon-linkedin"></span></a>
                 </article>
 

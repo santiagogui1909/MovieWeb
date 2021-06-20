@@ -5,9 +5,9 @@ const Pagination = ({previousPage,nextPage,count}) => {
 
     return (
         <section className="box-buttons">
-            <button className="back" onClick={previousPage}>back</button>
+            <a href="#top"><button className="back" onClick={previousPage}>back</button></a>
             <label>{count}</label>
-            <button className="next" onClick={nextPage}>next</button>
+            <a href="#top"><button className="next" onClick={nextPage}>next</button></a>
         </section>
     );
 };

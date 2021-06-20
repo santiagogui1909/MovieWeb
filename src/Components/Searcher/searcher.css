@@ -48,7 +48,7 @@ input {
   border-radius: 6px;
   border: 0;
   outline: none;
-  font-size: 30px;
+  font-size: 26px;
   text-align: center;
 }
 
@@ -102,11 +102,18 @@ input {
 }
 
 .listSearch label {
-  color: #fff;
+  color: rgb(255, 255, 255);
   padding: 40px 0 0 80px;
   font-size:30px;
 }
 
+.listSearch label::first-letter{
+  text-transform: capitalize;
+}
+
+.listSearch span{
+  color: rgb(255, 0, 0);
+}
 
 .listSearch {
   display: flex;
@@ -131,13 +138,20 @@ input {
   box-shadow: 8px 8px 0px #f60000c4;
 }
 
+fire{
+  background:#BA181B;
+}
+
 @media screen and (max-width: 800px) {
   .listSearch label {
     color: #fff;
-    padding: 80px 0 0 80px;
+    padding: 60px 0 0 55px;
     font-size:20px;
   }
 
+  .listSearch span{
+    color: rgb(255, 8, 0);
+  }
   .container-search {
     height: 100vh;
     width: 100%;

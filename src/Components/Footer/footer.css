@@ -33,7 +33,11 @@ footer{
 
 .icons {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+.icons a{
+    padding:0px 20px 0 20px;
 }
 
 .icons span {
@@ -135,11 +139,16 @@ h4::first-letter{
     
     .icons {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+    }
+
+    .icons a{
+        padding:0px 10px 0 10px;
     }
     
+    
     .icons span {
-        padding:5px;
+        padding:8px;
         font-size: 10px;
         text-decoration: none;
         background: #0B090A;
