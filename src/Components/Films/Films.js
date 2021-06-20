@@ -1,16 +1,13 @@
 // import { useEffect, useState } from 'react';
-import { useLocation, useHistory} from "react-router-dom";
+import {useHistory} from "react-router-dom";
 
 import "./films.css";
 
 const Films = ({ movie }) => {
-
-    const location = useLocation();
     const history = useHistory();
 
     const getMovieId = () => {
-        history.push({pathname:`/AboutFilm/${movie.id}`})
-        console.log(movie.id)
+        history.push(`/AboutFilm/${movie.id}`)
     }
 
 

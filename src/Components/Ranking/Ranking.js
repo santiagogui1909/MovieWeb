@@ -19,7 +19,7 @@ const Ranking = () => {
 
     return (
         <>
-            <header className="title-table-ranking">
+            <header className="title-table-ranking" id="top-ranking">
                 <h3>ranking 🏆</h3>
             </header>
             <div className="table-ranking">
@@ -31,11 +31,13 @@ const Ranking = () => {
                         <th>release date</th>
                     </tr>
                     {rankings.map((ranking) => {
+                        var date = new Date(ranking.release_date).toDateString();
+                        var dateNow = date.split(" ");
                         return (<tr key={ranking.id}>
                             <td>{ranking.title}</td>
                             <td>{ranking.vote_average} ⭐</td>
                             <td>{ranking.popularity}</td>
-                            <td>{ranking.release_date.split('-').reverse().join('/')}</td>
+                            <td>{`${dateNow[2]} / ${dateNow[1]} / ${dateNow[3]}`}</td>
                         </tr>)
                     })}
                 </table>

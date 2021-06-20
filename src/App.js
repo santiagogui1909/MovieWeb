@@ -1,14 +1,17 @@
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef} from "react";
 import "./fontello/css/fontello.css";
+import logo from "./images/logo-web-film-nav.svg";
 
 import Home from "../src/pages/Home/Home";
 import Ranking from "./Components/Ranking/Ranking";
 import List from "./Container/List";
 import Footer from "./Components/Footer/Footer";
+import AboutFilm from "./Components/AboutFilm/AboutFilm";
 
 function App() {
 
+  let topRef = useRef(null);
   const [scroll, setScroll] = useState(0);
 
   const scrollNav = () => {
@@ -23,27 +26,30 @@ function App() {
   const [menuResp, setMenuResp] = useState(false);
 
   return (
-    <div>
+    <div ref={topRef}>
       <Router>
         <nav className={`container-menu ${scroll > 20 ? "scroll" : null}`}>
           <ul className={menuResp ? "nav-menu-resp" : "nav-menu"}
             onClick={() => setMenuResp(false)}
           >
             <li>
-              <Link to="/" className="home">
+              <Link href="#top-menu" to="/" className="home" onClick={()=> {topRef.current.scrollIntoView(true)}}>
               <span className="icon-home"></span>home
               </Link>
             </li>
             <li>
-              <Link to="/Ranking" className="ranking">
+              <Link to="/Ranking" className="ranking" onClick={()=> {topRef.current.scrollIntoView(true)}}>
                 <span className="icon-trophy"></span>ranking
               </Link>
             </li>
             <li>
-              <Link to="/List" className="ranking">
-              <span className="icon-video"></span>films
+              <Link to="/List" className="films" onClick={()=> {topRef.current.scrollIntoView(true)}}>
+                <span className="icon-video"></span>films
               </Link>
             </li>
+
+            <img className="logo-nav" src={logo}></img>
+
           </ul>
           <p className="title-menu">menu</p>
           <button className="btn-menu" onClick={() => setMenuResp(!menuResp)}>
@@ -55,6 +61,7 @@ function App() {
           <Route path="/" component={Home} exact />
           <Route path="/List" component={List} exact />
           <Route path="/Ranking" component={Ranking} exact />
+          <Route path="/AboutFilm/:id" component={AboutFilm} exact />
         </Switch>
       </Router>
       <Footer />

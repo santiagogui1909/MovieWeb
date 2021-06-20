@@ -32,6 +32,12 @@ html{
     display:none;
 }
 
+.logo-nav{
+    width:154px;
+    height:35px;
+    padding-left: 70%;
+}
+
 .container-menu{
     width: 100%;
     cursor: pointer;
@@ -87,7 +93,7 @@ nav ul li span {
 }
   
 @media screen and (max-width: 780px){
-    .nav-menu{
+    .nav-menu,.logo-nav{
         display: none;
     }
 

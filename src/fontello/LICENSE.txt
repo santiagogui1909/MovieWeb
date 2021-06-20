@@ -10,13 +10,13 @@ Font license info
    Homepage:  http://zocial.smcllns.com/
 
 
-## Iconic
+## Typicons
 
-   Copyright (C) 2012 by P.J. Onori
+   (c) Stephen Hutchings 2012
 
-   Author:    P.J. Onori
+   Author:    Stephen Hutchings
    License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  http://somerandomdude.com/work/iconic/
+   Homepage:  http://typicons.com/
 
 
 ## Font Awesome
@@ -46,13 +46,13 @@ Font license info
    Homepage:  http://www.entypo.com
 
 
-## Typicons
+## Iconic
 
-   (c) Stephen Hutchings 2012
+   Copyright (C) 2012 by P.J. Onori
 
-   Author:    Stephen Hutchings
+   Author:    P.J. Onori
    License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  http://typicons.com/
+   Homepage:  http://somerandomdude.com/work/iconic/
 
 
 ## MFG Labs

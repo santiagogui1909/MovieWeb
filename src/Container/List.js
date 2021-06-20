@@ -34,7 +34,7 @@ const RenderApi = () => {
     }, [count]);
 
     return (
-        <>
+        <fragment id="top">
             <header className="title-films">
                 <label>on billboard 🎬</label>
             </header>
@@ -48,7 +48,7 @@ const RenderApi = () => {
                 nextPage={nextPage}
                 count={count}
             />
-        </>
+        </fragment>
     );
 };
 
