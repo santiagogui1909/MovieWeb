@@ -28,7 +28,7 @@ function App() {
 
   return (
     <div ref={topRef}>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <nav className={`container-menu ${scroll > 20 ? "scroll" : null}`}>
           <ul className={menuResp ? "nav-menu-resp" : "nav-menu"}
             onClick={() => setMenuResp(false)}
