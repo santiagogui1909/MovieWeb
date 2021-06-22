@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/santiagogui1909/MovieWeb.git",
+  "homepage": "http://santiagogui1909.github.io/FilmsWeb",
   "name": "movieweb",
   "version": "0.1.0",
   "private": true,
@@ -18,8 +18,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeplay": "npm run build",
-    "deploy": "gh-pages -d build"
+    "predeploy": "npm run build", 
+    "deploy": "gh-pages -d build" 
   },
   "eslintConfig": {
     "extends": [
@@ -43,6 +43,6 @@
     "@testing-library/dom": "^7.31.2",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
-    "gh-pages": "^3.2.1"
+    "gh-pages": "^3.2.3"
   }
 }
