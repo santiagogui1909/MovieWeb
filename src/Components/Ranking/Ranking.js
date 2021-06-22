@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import {getRanking} from "../../DataRequest";
 
 import "./ranking.css"
 
@@ -7,10 +8,8 @@ const Ranking = () => {
     const [rankings, setRankings] = useState([]);
 
     const getRankings = async () => {
-        const urlRanking = `https://api.themoviedb.org/3/movie/top_rated?api_key=8f18f8939b1b8b2b379a9ccf6b0b6e43`;
-        const response = await fetch(urlRanking);
-        const responseRanking = await response.json();
-        setRankings(responseRanking.results);
+        const rankingData = await getRanking();
+        setRankings(rankingData.results);
     }
 
     useEffect(() => {

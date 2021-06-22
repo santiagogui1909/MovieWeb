@@ -31,6 +31,8 @@ footer{
     text-decoration: underline #161A1D;
 }
 
+/* styles for the icons */
+
 .icons {
     display: flex;
     justify-content: center;
@@ -112,7 +114,7 @@ h4::first-letter{
     background:#0B090A;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 768px){
     footer{
         display: flex;
         flex-direction: row;

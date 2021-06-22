@@ -1,17 +1,18 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import {getId} from "../../DataRequest";
 
 import img from '../../images/img-error.svg';
 import "./aboutFilm.css";
 
 const AboutFilm = () => {
+
     const params = useParams();
     const [aboutFilm, setAboutFilm] = useState([]);
 
     useEffect(async () => {
-        const urlAbout = await fetch(` https://api.themoviedb.org/3/movie/${params.id}?api_key=8f18f8939b1b8b2b379a9ccf6b0b6e43&`);
-        const response = await urlAbout.json();
-        setAboutFilm(response);
+        const resultData = await getId(params.id)
+        setAboutFilm(resultData);
     }, [])
 
 
@@ -31,9 +32,9 @@ const AboutFilm = () => {
             </div>
             <div class="clr"></div>
             <section className="content-more-info">
-                <label><span className="icon-videocam-outline"></span>release date:  {aboutFilm.release_date}</label>
-                <label><span className="icon-videocam-outline"></span>original language:  {aboutFilm.original_language}</label>
-                <label><span className="icon-videocam-outline"></span>assessment:  {aboutFilm.vote_average}<span className="icon-star-filled"></span></label>
+                <label><span className="icon-videocam-1"></span>release date:  {aboutFilm.release_date}</label>
+                <label><span className="icon-videocam-1"></span>original language:  {aboutFilm.original_language}</label>
+                <label><span className="icon-videocam-1"></span>assessment:  {aboutFilm.vote_average}<span className="icon-star"></span></label>
             </section>
         </div>
     )

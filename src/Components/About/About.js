@@ -19,7 +19,7 @@ const About = () => {
                 </article>
 
                 <div className="btn-ranking">
-                    <a href="/Ranking"><button>see ranking</button></a>
+                    <a href="/Ranking">see ranking</a>
                 </div>
             </section>
             <section className="container-info">

@@ -55,40 +55,10 @@
       "src": "fontawesome"
     },
     {
-      "uid": "c737078cb69dfd2e8484e134ecbce791",
-      "css": "child",
-      "code": 59395,
-      "src": "elusive"
-    },
-    {
-      "uid": "7034e4d22866af82bef811f52fb1ba46",
-      "css": "code",
-      "code": 61729,
-      "src": "fontawesome"
-    },
-    {
-      "uid": "6274e0601f2feef7eced89146e708de0",
-      "css": "user-add",
-      "code": 59396,
-      "src": "entypo"
-    },
-    {
-      "uid": "c95735c17a10af81448c7fed98a04546",
-      "css": "folder-open",
-      "code": 59397,
-      "src": "fontawesome"
-    },
-    {
       "uid": "53c28626072159c49f33b71d67138ad9",
       "css": "commenting",
       "code": 62074,
       "src": "fontawesome"
-    },
-    {
-      "uid": "b6f32db98a3de777f5ae3005191b1831",
-      "css": "code-1",
-      "code": 59398,
-      "src": "entypo"
     },
     {
       "uid": "26613a2e6bc41593c54bead46f8c8ee3",
@@ -121,22 +91,28 @@
       "src": "iconic"
     },
     {
-      "uid": "3d8b20949cd6f782067f9e652967f8a8",
-      "css": "videocam-outline",
-      "code": 59403,
-      "src": "typicons"
+      "uid": "40c6538b0fd40540bf78373f8a1fb7af",
+      "css": "videocam-1",
+      "code": 61498,
+      "src": "mfglabs"
     },
     {
-      "uid": "vyuzsm6wijlfwtjo4ifkoblfmsepk6g8",
-      "css": "star-filled",
-      "code": 59402,
-      "src": "typicons"
+      "uid": "fd32deda7b2f5b8cad46d13897c19ae8",
+      "css": "cancel-circled",
+      "code": 59395,
+      "src": "elusive"
     },
     {
       "uid": "t6cy82vd3t5piy0j3uknrlrzpg1ld8y3",
       "css": "search",
-      "code": 59404,
+      "code": 59397,
       "src": "typicons"
+    },
+    {
+      "uid": "474656633f79ea2f1dad59ff63f6bf07",
+      "css": "star",
+      "code": 59396,
+      "src": "fontawesome"
     }
   ]
 }

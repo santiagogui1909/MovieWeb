@@ -11,6 +11,7 @@ import AboutFilm from "./Components/AboutFilm/AboutFilm";
 
 function App() {
 
+  // activates the scroll in the navigation when the user scrolls
   let topRef = useRef(null);
   const [scroll, setScroll] = useState(0);
 
@@ -52,6 +53,9 @@ function App() {
 
           </ul>
           <p className="title-menu">menu</p>
+
+          {/* change the class depending on the state */}
+
           <button className="btn-menu" onClick={() => setMenuResp(!menuResp)}>
             {menuResp ? <i className="icon-cancel-circled"></i> : <i className="icon-menu"></i>}
           </button>

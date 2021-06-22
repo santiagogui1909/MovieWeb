@@ -92,7 +92,7 @@ nav ul li span {
     display: none;
 }
   
-@media screen and (max-width: 780px){
+@media screen and (max-width: 768px){
     .nav-menu,.logo-nav{
         display: none;
     }
