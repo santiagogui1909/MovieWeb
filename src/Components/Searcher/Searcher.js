@@ -1,26 +1,24 @@
 import { useEffect, useState, useRef } from 'react';
 import Swal from 'sweetalert2'
 import ListSearch from "./ListSearch";
+import {getFilm} from "../../DataRequest";
 
 import "./searcher.css";
 import "../Films/films.css";
 
-
-const Searcher = () => {
+const Searcher = ({mock}) => {
 
     const [inputMovie, setInputMovie] = useState("");
     const [searchMovies, setSearchMovie] = useState([]);
     const [boxList, setBoxList] = useState(false);
     const myRef = useRef(null);
     const error = "No results found ☹️";
+
     //search movies
     const searchMovie = async () => {
-        const urlSearch = `https://api.themoviedb.org/3/search/movie?api_key=8f18f8939b1b8b2b379a9ccf6b0b6e43&query=${inputMovie}`;
-        const responseSearchMovie = await fetch(urlSearch);
-        const responseSearch = await responseSearchMovie.json();
-        // console.log(responseSearch);
-        setSearchMovie(responseSearch.results);
-        }
+        const resultData = await getFilm(inputMovie);
+        setSearchMovie(resultData.results);
+    }
 
     useEffect(() => {
         if (inputMovie !== "") {
@@ -28,14 +26,19 @@ const Searcher = () => {
         }
     }, [inputMovie]);
 
+    //save the value that user enter in the input
     const handleChange = (e) => {
         setInputMovie(e.target.value);
     }
+
+    
+//verifies that the value complies with the established parameters
 
     const search = (e) => {
         e.preventDefault()
 
         if (!validSearch(inputMovie)) {
+            // return mock('Enter a search, do not use numbers');
             Swal.fire({
                 position: 'center',
                 icon: 'info',
@@ -46,10 +49,14 @@ const Searcher = () => {
             setInputMovie("");
             setBoxList(false);
         }else {
+            // mock('search is correct');
+            // myRef.currentTarget.scrollIntoView();
             myRef.current.scrollIntoView();
             return setBoxList(true);
         }
     }
+
+//use regex to determine valid characters
 
     const validSearch = (inputMovie) => {
         const userRegex = /^[A-Z ]+$/i;
@@ -66,7 +73,7 @@ const Searcher = () => {
                 </header>
                 <section className="box-input">
                     <input type="search" name="search" placeholder="search movies,series,tv" onChange={handleChange} value={inputMovie} />
-                    <button className="btn-search" onClick={search}><span className="icon-search"></span></button>
+                    <button className="btn-search" aria-label="btn-search" onClick={search}><span className="icon-search"></span></button>
                 </section>
                 <span className="icon-up-open"></span>
             </div>

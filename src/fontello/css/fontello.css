@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'fontello';
-  src: url('../font/fontello.eot?11343634');
-  src: url('../font/fontello.eot?11343634#iefix') format('embedded-opentype'),
-       url('../font/fontello.woff2?11343634') format('woff2'),
-       url('../font/fontello.woff?11343634') format('woff'),
-       url('../font/fontello.ttf?11343634') format('truetype'),
-       url('../font/fontello.svg?11343634#fontello') format('svg');
+  src: url('../font/fontello.eot?26495072');
+  src: url('../font/fontello.eot?26495072#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?26495072') format('woff2'),
+       url('../font/fontello.woff?26495072') format('woff'),
+       url('../font/fontello.ttf?26495072') format('truetype'),
+       url('../font/fontello.svg?26495072#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?11343634#fontello') format('svg');
+    src: url('../font/fontello.svg?26495072#fontello') format('svg');
   }
 }
 */
@@ -57,21 +57,17 @@
 .icon-gmail:before { content: '\e800'; } /* '' */
 .icon-menu:before { content: '\e801'; } /* '' */
 .icon-up-open:before { content: '\e802'; } /* '' */
-.icon-child:before { content: '\e803'; } /* '' */
-.icon-user-add:before { content: '\e804'; } /* '' */
-.icon-folder-open:before { content: '\e805'; } /* '' */
-.icon-code-1:before { content: '\e806'; } /* '' */
+.icon-cancel-circled:before { content: '\e803'; } /* '' */
+.icon-star:before { content: '\e804'; } /* '' */
+.icon-search:before { content: '\e805'; } /* '' */
 .icon-home:before { content: '\e807'; } /* '' */
 .icon-trophy:before { content: '\e808'; } /* '' */
 .icon-video:before { content: '\e809'; } /* '' */
-.icon-star-filled:before { content: '\e80a'; } /* '' */
-.icon-videocam-outline:before { content: '\e80b'; } /* '' */
-.icon-search:before { content: '\e80c'; } /* '' */
+.icon-videocam-1:before { content: '\f03a'; } /* '' */
 .icon-instagram:before { content: '\f05d'; } /* '' */
 .icon-facebook:before { content: '\f09a'; } /* '' */
 .icon-github-circled:before { content: '\f09b'; } /* '' */
 .icon-laptop:before { content: '\f109'; } /* '' */
-.icon-code:before { content: '\f121'; } /* '' */
 .icon-file-code:before { content: '\f1c9'; } /* '' */
 .icon-whatsapp:before { content: '\f232'; } /* '' */
 .icon-commenting:before { content: '\f27a'; } /* '' */

@@ -47,7 +47,7 @@
 .poster img {
     width: 260px;
     height: 380px;
-    border-radius: 4px;
+    border-radius: 8px;
     z-index: 1;
     animation-duration: 6s;
     animation-iteration-count:infinite;
@@ -83,10 +83,10 @@
 
 .content-more-info label  span{
     padding-right: 20px;
-    color: rgb(0, 0, 0);
+    color: rgb(206, 206, 206);
 }
 
-.content-more-info .icon-star-filled{
+.content-more-info .icon-star{
     color: rgb(238, 235, 61);
     font-size: 20px;
     padding:5px;
@@ -97,10 +97,10 @@
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
 
     .container-info-films {
-        margin: 0px;
+        margin: 10px;
         padding-top: 100px;
     }
     
@@ -111,37 +111,50 @@
     }
     
     .box-info h2 {
+        padding-top: 140px;
         color: #fff;
-        font-size: 50px;
+        font-size: 28px;
         text-align: right;
     }
     
     .box-info p {
         width: 100%;
         color: #fff;
-        font-size: 13px;
-        text-align: start;
+        font-size: 15px;
+        text-align:justify;
         line-height: 32px;
     }
     
     .poster {
-        padding: 20px;
+        padding: 15px;
     }
     
     .poster img {
-        width: 100px;
-        height: 140px;
-        left: 15px;
+        width: 120px;
+        height: 180px;
+        left: 6%;
         z-index: 0;
     }
 
     .content-more-info {
         color: #fff;
-        padding-left: 2px;
-        font-size: 8px;
+        padding-left:0px;
+        font-size: 10px;
     }
     
     .content-more-info label {
-        padding: 10px;
+        padding: 6px;
+    }
+
+    .content-more-info label  span{
+        padding-right: 4px;
+        font-size: 6px;
+        color: rgb(206, 206, 206);
+    }
+    
+    .content-more-info .icon-star{
+        color: rgb(238, 235, 61);
+        font-size: 6px;
+        padding:2px;
     }
 }

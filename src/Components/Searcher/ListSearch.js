@@ -11,7 +11,7 @@ const ListSearch = ({searchs}) => {
     const getMovieId = () => {
         history.push(`/AboutFilm/${searchs.id}`)
     }
-
+    
     return (
         <div className="card-search" key={searchs.id}>
             <img onClick={getMovieId} src={searchs.poster_path ? "https://image.tmdb.org/t/p/w1280" + searchs.poster_path : img}></img>

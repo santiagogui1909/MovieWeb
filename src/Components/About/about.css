@@ -26,19 +26,19 @@ p{
 }
 
 
-.btn-ranking button{
+.btn-ranking a{
     padding:20px;
     font-size: 20px;
     color: #fff;
     background:#BA181B;
-    border: none;
+    text-decoration: none;
 }
 
-.btn-ranking button:hover{
+.btn-ranking a:hover{
     background-color: black;
 }
 
-/* contenedor imagen e lista informacion */
+/* image container and information list */
 
 .container-info{
     display: flex;
@@ -80,7 +80,7 @@ h3::first-letter{
     list-style-image: url("../../images/claqueta.svg");
 }
 
-/* contenido imagen */
+/* image content */
 
 .img-box{
     width: 30%;
@@ -94,10 +94,10 @@ h3::first-letter{
 }
 
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 768px){
     .box-about{
         background:#fff;
-        padding:15px;
+        padding:26px;
     }
 
     h2{
@@ -107,21 +107,21 @@ h3::first-letter{
     }
     
     p{
-        padding: 20px;
+        padding: 16px;
         font-size:18px;
 
     }
 
-    .btn-ranking button{
-        padding:20px;
-        font-size: 14px;
+    .btn-ranking a{
+        padding:14px;
+        font-size: 10px;
     }
     
-    .btn-ranking button:hover{
+    .btn-ranking a:hover{
         background-color: black;
     }
     
-    /* contenedor imagen e lista informacion */
+    /* image container and information list */
     
     .container-info{
         margin:0px;
@@ -129,7 +129,7 @@ h3::first-letter{
     
     .information{
         width: 100%;
-        padding:30px;
+        padding:10px;
     }
     
     
@@ -147,7 +147,7 @@ h3::first-letter{
         line-height : 50px;
     }
     
-    /* contenido imagen */
+    /* image content */
 
     .img-box{
         padding:15px;
