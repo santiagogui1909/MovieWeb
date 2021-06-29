@@ -141,7 +141,7 @@ nav ul li span {
         display: block;
         position: absolute;
         font-size: 40px;
-        background: #161A1D;
+        background: #14191d;
         color: #fff;
         border:none;
         outline: none;
@@ -152,7 +152,7 @@ nav ul li span {
 }
 
 .scroll {
-    background: #161A1D;
+    background: #14191d;
     transition: all 0.5s ease;
     z-index: 1000;
 }

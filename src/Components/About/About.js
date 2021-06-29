@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom';
 
 import img from '../../images/cine.svg';
 import "./about.css";
@@ -19,7 +20,7 @@ const About = () => {
                 </article>
 
                 <div className="btn-ranking">
-                    <a href="/Ranking">see ranking</a>
+                    <Link to="/Ranking">see ranking</Link>
                 </div>
             </section>
             <section className="container-info">

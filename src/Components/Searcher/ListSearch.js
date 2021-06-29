@@ -3,11 +3,9 @@ import {useHistory} from "react-router-dom";
 import "./searcher.css";
 import img from '../../images/img-error.svg';
 
-
 const ListSearch = ({searchs}) => {
 
     const history = useHistory();
-
     const getMovieId = () => {
         history.push(`/AboutFilm/${searchs.id}`)
     }
