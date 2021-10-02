@@ -20,7 +20,8 @@ const About = () => {
                 </article>
 
                 <div className="btn-ranking">
-                    <Link to="/Ranking">see ranking</Link>
+                    {/* <Link to="/Ranking">see ranking</Link> */}
+                    <a href="/Ranking">see ranking</a>
                 </div>
             </section>
             <section className="container-info">

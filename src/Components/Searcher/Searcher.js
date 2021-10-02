@@ -34,32 +34,33 @@ const Searcher = ({mock}) => {
     
 //verifies that the value complies with the established parameters
 
-    const search = (e) => {
-        e.preventDefault()
+    
+const search = (e) => {
+    e.preventDefault()
 
-        if (!validSearch(inputMovie)) {
-            // return mock('Enter a search, do not use numbers');
-            Swal.fire({
-                position: 'center',
-                icon: 'info',
-                title: 'Enter a search, do not use numbers',
-                showConfirmButton: false,
-                timer: 1800
-              })
-            setInputMovie("");
-            setBoxList(false);
-        }else {
-            // mock('search is correct');
-            // myRef.currentTarget.scrollIntoView();
-            myRef.current.scrollIntoView();
-            return setBoxList(true);
-        }
+    if (!validSearch(inputMovie)) {
+        // return mock('Enter a search, do not use numbers');
+        Swal.fire({
+            position: 'center',
+            icon: 'info',
+            title: 'Enter a search, do not use numbers',
+            showConfirmButton: false,
+            timer: 1800
+          })
+        setInputMovie("");
+        setBoxList(false);
+    }else {
+        // mock('search is correct');
+        // myRef.currentTarget.scrollIntoView();
+        myRef.current.scrollIntoView();
+        return setBoxList(true);
     }
+}
 
 //use regex to determine valid characters
 
     const validSearch = (inputMovie) => {
-        const userRegex = /^[A-Z ]+$/i;
+        const userRegex = /^[A-Z ]+$/i;  
         return userRegex.test(inputMovie);
     }
 
@@ -67,7 +68,7 @@ const Searcher = ({mock}) => {
     return (
         <>
             <div className="container-search">
-                <img src="https://cdn.pixabay.com/photo/2017/11/24/10/43/ticket-2974645_960_720.jpg"></img>
+                <img src="https://cdn.pixabay.com/photo/2017/11/24/10/43/ticket-2974645_960_720.jpg" alt="img"></img>
                 <header>
                     <h1>films<span>Web</span></h1>
                 </header>
