@@ -1,8 +1,8 @@
 import "@testing-library/jest-dom/extend-expect";
-import { render, screen,fireEvent} from "@testing-library/react";
+import { render} from "@testing-library/react";
 import Films from "./Films";
 
-describe("test for the about component ", () => {
+describe("test for the about component", () => {
 
     test("get the correct poster", () => {
 

@@ -7,7 +7,7 @@ const Footer = () => {
         <>
         <footer>
             <div className="footer-logo">
-                <img src={logo}></img>
+                <img src={logo} alt="img-prop"></img>
             </div>
             <section className="box-social-network">
                 <h4>follow me</h4>
