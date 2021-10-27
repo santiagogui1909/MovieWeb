@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import {getRanking} from "../../DataRequest";
 
-import "./ranking.css"
+import "./Ranking.css"
 
 const Ranking = () => {
 
