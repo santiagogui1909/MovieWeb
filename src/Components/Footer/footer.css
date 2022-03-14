@@ -1,213 +1,150 @@
 
 footer{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
     background: #F5F3F4;
-    padding: 80px;
-}
-
-.footer-logo{
-    width: 28%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 60px;
 }
 
 .footer-logo img{
-    padding:55px 0 0 0;
-    width:320px;
     height:120px;
+    left:50px;
+    position: relative;
+    top: 50px;
+    width:360px;
     z-index: 1;
 }
 
-.box-social-network{
-    width:30%;
+.comments{
+    background:#d60a0a;
+    border-radius: 12px;
+    padding: 60px 40px;
 }
 
-.box-social-network h4{
-    color: #BA181B;
-    font-size:35px;
-    text-align: center;
-    padding-bottom: 40px;
-    text-decoration: underline #161A1D;
-}
-
-/* styles for the icons */
-
-.icons {
-    display: flex;
-    justify-content: center;
-}
-
-.icons a{
-    padding:0px 20px 0 20px;
-}
-
-.icons span {
-    padding:10px;
-    font-size: 30px;
-    text-decoration: none;
-    background: #0B090A;
-    color: #F5F3F4;
-    border-radius:30px;
-    transition: all 0.3s;
-}
-
-.icons span:hover {
-    box-shadow: 0px 6px #c30505;
-    color:#BA181B;
-}
-
-.box-gmail{
-    text-align: center;
-    padding-top:70px;
-}
-
-.box-gmail a {
-    font-size:20px;
-    text-decoration: none;
-    color: #fdfdfd;
-    transition: all 0.6s;
-    text-transform:capitalize;
-    background:#c30505;
-    padding:14px;
-    border-radius:20px;
-}
-
-.box-gmail a:hover{
-    font-size:22px;
-}
-
-.box-gmail span{
-    color: #fff;
-    padding:10px;
-    font-size: 22px;
-}
-
-.box-github{
-    width:28%;
-    text-align: center;
-}
-
-h4::first-letter{
+.comments label{
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin: 20px;
     text-transform: capitalize;
 }
 
-.box-github h4{
-    color: #BA181B;
-    font-size:28px;
+.inputComment{
+    background-color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    color: #000000;
+    font-size:1rem;
+    padding:10px 40px;
 }
 
-.box-github span {
-    color:black;
-    font-size:80px;
+.btn-comments{
+    background-color: #000000;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0px 6px 0px #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+    font-size:1.3rem;
+    height:6vh;
+    position: relative;
+    left: 330px;
+    top: 26px;
+    text-transform: capitalize;
+    width:26%;
 }
 
-.box-github span:hover {
-    font-size:90px;
-    transition: all 0.80s;
+.btn-comments:active{
+    box-shadow: 0px 2px 0px #ffffff;
+    top:28px;
+}
+
+.boxAlertComm{
+    background: #000000;
+    padding: 30px;
+    position:absolute;
+    right: 120px;
+    top: 296%;
+}
+
+.boxAlertComm span{ 
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.boxAlertComm p{
+    color: #fa0000;
+    font-size: 1.8rem;
 }
 
 .copy p{
-    font-size:15px;
+    font-size:13px;
     text-align: center;
     color: #F5F3F4;
     background:#0B090A;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 600px) {
     footer{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
         background: #F5F3F4;
-        padding: 20px;
+        display: grid;
+        grid-template-columns: 100%;
+        padding: 30px;
     }
     
     .footer-logo img{
-        padding:50px 10px 80px 10px;
-        width:80px;
-        height:20px;
+        height:100px;
+        left:40px;
+        position: relative;
+        top: 0px;
+        width:280px;
         z-index: 1;
     }
+    
+    .comments{
+        background:#d60a0a;
+        border-radius: 12px;
+        padding: 60px 40px;
+    }
+    
+    .comments label{
+        color: #ffffff;
+        font-size: 1.3rem;
+        margin: 10px;
+    }
+    
+    .comments input{
+        background-color: #ffffff;
+        color: #000000;
+        margin-top: 20px;
+        padding:10px 24px
+    }
+    
+    .btn-comments{
+        left: 50px;
+        top: 20px;
+        width:60%;
+    }
+    
+    .btn-comments:active{
+        top:12px;
+        box-shadow: 0px 3px 0px #ffffff;
+    }
 
-    .box-social-network h4{
-        color: #BA181B;
-        font-size:16px;
-        text-align: center;
-        padding-bottom: 20px;
-        text-decoration: underline #161A1D;
+    .btn-comments:active{
+        box-shadow: 0px 2px 0px #ffffff;
+        top:28px;
     }
     
-    .icons {
-        display: flex;
-        justify-content: center;
-    }
-
-    .icons a{
-        padding:0px 10px 0 10px;
-    }
-    
-    
-    .icons span {
-        padding:8px;
-        font-size: 10px;
-        text-decoration: none;
-        background: #0B090A;
-        color: #F5F3F4;
-        border-radius:30px;
-        transition: all 0.3s;
+    .boxAlertComm{
+        background: #000000;
+        padding: 20px;
+        position:absolute;
+        right: 12px;
+        top: 270%;
     }
     
-    .icons span:hover {
-        box-shadow: 0px 6px #c30505;
-        color:#BA181B;
-    }
-    
-    .box-gmail{
-        text-align: center;
-        padding-top:30px;
-    }
-    
-    .box-gmail a {
-        font-size:10px;
-        text-decoration: none;
-        color: #fdfdfd;
-        transition: all 0.6s;
-        text-transform:capitalize;
-        background:#c30505;
-        padding:10px;
-        border-radius:20px;
-    }
-    
-    .box-gmail a:hover{
-        font-size:8px;
-    }
-    
-    .box-gmail span{
-        color: #fff;
-        padding:5px;
-        font-size: 10px;
-    }
-    
-    h4::first-letter{
-        text-transform: capitalize;
-    }
-    
-    .box-github h4{
-        padding:2px 10px 0px 10px;
-        color: #BA181B;
-        font-size:12px;
-    }
-    
-    .box-github span {
-        color:black;
-        font-size:40px;
-    }
-    
-    .box-github span:hover {
-        font-size:50px;
-        transition: all 0.80s;
+    .boxAlertComm p{
+        font-size: 1.4rem;
     }
     
     .copy p{
@@ -215,5 +152,73 @@ h4::first-letter{
         text-align: center;
         color: #F5F3F4;
         background:#0B090A;
+    }
+    
+}
+
+@media screen and (min-width: 800px) and (max-width:1200px) {
+    footer{
+        background: #F5F3F4;
+        display: grid;
+        grid-template-columns: 100%;
+        padding: 20px;
+    }
+    
+    .footer-logo img{
+        top: 0px;
+        left: 200px;
+    }
+    
+    .comments{
+        background:#d60a0a;
+        border-radius: 12px;
+        padding: 60px 90px;
+    }
+
+    .comments label{
+        color: #ffffff;
+        font-size: 1.6rem;
+        margin: 10px;
+    }
+    
+    .comments input{
+        background-color: #ffffff;
+        color: #000000;
+        margin-top: 20px;
+        padding:16px 50px
+    }
+    
+    .btn-comments{
+        left: 350px;
+        top: 30px;
+        width:30%;
+    }
+    
+    .btn-comments:active{
+        top:2px;
+        box-shadow: 0px 1px 0px #ffffff;
+    }
+
+    .boxAlertComm{
+        background: #000000;
+        padding: 20px;
+        position:absolute;
+        right: 180px;
+        top: 224%;
+    }
+    
+    .boxAlertComm p{
+        font-size: 1.8rem;
+    }
+    
+}
+
+@media screen and (min-width: 1400px) {
+    .boxAlertComm{
+        background: #000000;
+        padding: 20px;
+        position:absolute;
+        right: 140px;
+        top: 212%;
     }
 }

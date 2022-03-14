@@ -1,3 +1,29 @@
+
+h2{
+    color: #A4161A;
+    font-size: 3.8rem;
+    padding: 60px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+p{
+    color: rgb(0, 0, 0);
+    font-size:1.4rem;
+    padding: 30px;
+}
+
+h3{
+    color: #A4161A;
+    font-size: 3rem;
+    padding:0px 0 50px 0;
+    text-align: center;
+}
+
+h3::first-letter{
+    text-transform: capitalize;   
+ }
+
 .about{
     margin: 50px;
 }
@@ -7,30 +33,16 @@
     padding:60px;
 }
 
-h2{
-    padding: 60px;
-    color: #A4161A;
-    text-align: center;
-    font-size: 60px;
-    text-transform: capitalize;
-}
-
-p{
-    padding: 30px;
-    font-size:24px;
-    color: rgb(0, 0, 0);
-}
-
 .btn-ranking {
     text-align: center;
 }
 
 
 .btn-ranking a{
-    padding:20px;
-    font-size: 20px;
-    color: #fff;
     background:#BA181B;
+    color: #fff;
+    font-size: 1.2rem;
+    padding:20px;
     text-decoration: none;
 }
 
@@ -43,8 +55,8 @@ p{
 .container-info{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: space-around;
     margin:40px;
 }
 
@@ -53,23 +65,10 @@ p{
     width: 40%;
 }
 
-
-h3{
-    text-align: center;
-    font-size: 50px;
-    color: #A4161A;
-    padding:0px 0 50px 0;
-}
-
-h3::first-letter{
-    text-transform: capitalize;   
- }
-
 .information ul li{
     color: #FFFF;
-    font-size: 28px;
+    font-size: 1.4rem;
     line-height : 50px;
-    
 }
 
 .information ul li::first-letter{
@@ -83,38 +82,46 @@ h3::first-letter{
 /* image content */
 
 .img-box{
-    width: 30%;
     padding:70px;
+    width: 30%;
 }
 
 .img-box img{
-    width: 450px;
     height: 450px;
     transform: rotate(-13deg);
+    width: 450px;
 }
 
 
 @media screen and (max-width: 768px){
+    
+    h2{
+        font-size: 1.8rem;
+        padding: 24px;
+        text-transform: capitalize;
+    }
+    
+    p{
+        font-size:1rem;
+        padding: 16px;   
+    }
+
+    h3{
+        font-size: 1.8rem;
+    }
+    
+    h3::first-letter{
+        text-transform: capitalize;   
+     }
+    
     .box-about{
         background:#fff;
         padding:26px;
     }
 
-    h2{
-        padding: 24px;
-        font-size: 30px;
-        text-transform: capitalize;
-    }
-    
-    p{
-        padding: 16px;
-        font-size:18px;
-
-    }
-
     .btn-ranking a{
+        font-size: 0.700rem;
         padding:14px;
-        font-size: 10px;
     }
     
     .btn-ranking a:hover{
@@ -128,22 +135,13 @@ h3::first-letter{
     }
     
     .information{
-        width: 100%;
         padding:10px;
+        width: 100%;
     }
-    
-    
-    h3{
-        font-size: 28px;
-    }
-    
-    h3::first-letter{
-        text-transform: capitalize;   
-     }
     
     .information ul li{
         color: #FFFF;
-        font-size: 18px;
+        font-size: 1rem;
         line-height : 50px;
     }
     
@@ -154,11 +152,39 @@ h3::first-letter{
     }
     
     .img-box img{
-        position: relative;
-        top: 0px;
-        right: 70px;
-        width: 230px;
         height: 260px;
+        position: relative;
+        right: 70px;
+        top: 0px;
         transform: rotate(-13deg);
+        width: 230px;
+    }
+}
+
+
+@media screen and (max-width: 1200px){
+    
+    .information{
+        padding:10px;
+        width: 60%;
+    }
+    
+    .information ul li{
+        color: #FFFF;
+        font-size: 1rem;
+        line-height : 50px;
+    }
+    
+    .img-box{
+        padding:6px;
+    }
+    
+    .img-box img{
+        height: 260px;
+        position: relative;
+        right: 70px;
+        top: 40px;
+        transform: rotate(-13deg);
+        width: 230px;
     }
 }

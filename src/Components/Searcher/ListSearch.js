@@ -1,19 +1,23 @@
-import {useHistory} from "react-router-dom";
-
-import "./searcher.css";
+import {useSelector} from "react-redux";
+import {useNavigate} from "react-router-dom";
 import img from '../../images/img-error.svg';
+import "./searcher.css";
 
-const ListSearch = ({searchs}) => {
+const ListSearch = () => {
 
-    const history = useHistory();
-    const getMovieId = () => {
-        history.push(`/AboutFilm/${searchs.id}`)
-    }
-    
+    const state = useSelector(state => state.movieReducer.search);
+    const navigate = useNavigate();
+
     return (
-        <div className="card-search" key={searchs.id}>
-            <img onClick={getMovieId} src={searchs.poster_path ? "https://image.tmdb.org/t/p/w1280" + searchs.poster_path : img}></img>
-        </div> 
+        <>
+          {state.map((movie) => {
+            return <div className="card-search" >
+                <img onClick={()=> navigate(`/AboutFilm/${movie.id}`)} 
+                src={movie.poster_path ? "https://image.tmdb.org/t/p/w1280" + movie.poster_path : img} 
+                alt="poster"></img>
+            </div> 
+            })}
+        </>
     );
 };
 

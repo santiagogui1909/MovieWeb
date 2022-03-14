@@ -3,10 +3,10 @@ import Searcher from "../../Components/Searcher/Searcher";
 
 const Home = () => {
     return (
-        <div>
+        <article>
             <Searcher />
             <About />
-        </div>
+        </article>
     );
 };
 

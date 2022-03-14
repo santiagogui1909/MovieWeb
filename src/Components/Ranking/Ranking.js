@@ -1,20 +1,25 @@
-import { useEffect, useState } from 'react';
+import {useEffect} from 'react';
+import {ranking} from '../../Reducer/movieReducer';
+import {useDispatch , useSelector} from 'react-redux';
 import {getRanking} from "../../DataRequest";
 
 import "./Ranking.css"
 
 const Ranking = () => {
 
-    const [rankings, setRankings] = useState([]);
+    const dispatch = useDispatch();
+    const state = useSelector(state => state.movieReducer.ranking);
 
-    const getRankings = async () => {
-        const rankingData = await getRanking();
-        setRankings(rankingData.results);
+    const getRankings = () => {
+        getRanking().then((rankingData) => dispatch(ranking(rankingData.results)))
+        .catch(function(err){
+            console.log(err);
+        })
     }
-
+    
     useEffect(() => {
         getRankings();
-    }, []);
+    },[]);
 
     return (
         <>
@@ -29,9 +34,10 @@ const Ranking = () => {
                         <th>popularity</th>
                         <th>release date</th>
                     </tr>
-                    {rankings.map((ranking) => {
-                        var date = new Date(ranking.release_date).toDateString();
-                        var dateNow = date.split(" ");
+                    {state.map((ranking) => {
+                        let date = new Date(ranking.release_date).toDateString();
+                        let dateNow = date.split(" ");
+                        
                         return (<tr key={ranking.id}>
                             <td>{ranking.title}</td>
                             <td>{ranking.vote_average} ⭐</td>

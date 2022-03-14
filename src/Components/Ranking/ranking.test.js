@@ -6,7 +6,7 @@ describe("test for the about component ", () => {
 
     test("render elements with th tag", () => {
         const component = render(<Ranking />)
-        const tr = component.container.querySelector("tr");
-        expect(tr).toBeDefined();
+        const th = component.container.querySelector("th");
+        expect(th).toBeDefined();
     })
 })

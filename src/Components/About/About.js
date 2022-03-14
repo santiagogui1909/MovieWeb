@@ -1,5 +1,4 @@
-import {Link} from 'react-router-dom';
-
+import { Link } from 'react-router-dom';
 import img from '../../images/cine.svg';
 import "./about.css";
 
@@ -10,22 +9,22 @@ const About = () => {
                 <h2>¿what is movieWeb?</h2>
             </header>
 
-            <section className="box-about">
-                <article>
+            <article className="box-about">
+                <section>
                     <p>MovieWeb is a page where you can search for movies and find information
                         about them, duration, score, year of release.
 
                         It has a ranking section to know the best movies to date, keep you updated
                         on all the new series and movie releases.</p>
-                </article>
+                </section>
 
-                <div className="btn-ranking">
-                    {/* <Link to="/Ranking">see ranking</Link> */}
-                    <a href="/Ranking">see ranking</a>
-                </div>
-            </section>
-            <section className="container-info">
-                <article className="information">
+                <section className="btn-ranking">
+                    <Link to="/Ranking">see ranking</Link>
+                </section>
+            </article>
+            
+            <article className="container-info">
+                <section className="information">
                     <h3>¿what can you find?</h3>
                     <ul>
                         <li>series</li>
@@ -34,12 +33,12 @@ const About = () => {
                         <li>news on billboard</li>
                         <li>the best movies of the moment</li>
                     </ul>
-                </article>
+                </section>
 
                 <figure className="img-box">
-                    <img src={img}></img>
+                    <img src={img} alt="popCorns"></img>
                 </figure>
-            </section>
+            </article>
         </div>
     );
 };

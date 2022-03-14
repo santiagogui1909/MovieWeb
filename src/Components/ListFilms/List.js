@@ -1,14 +1,26 @@
 import { useEffect, useState } from 'react';
-
-import Films from '../Components/Films/Films';
-import Pagination from '../Components/Pagination/Pagination';
-import "../Components/Films/films.css";
-import {getAllFilms} from "../DataRequest";
+import { getMovies } from '../../Reducer/movieReducer';
+import { useDispatch } from 'react-redux';
+import {getAllFilms} from "../../DataRequest";
+import Films from '../Films/Films';
+import Pagination from '../Pagination/Pagination';
+import "../Films/films.css";
 
 const RenderApi = () => {
-
-    const [movies, setMovies] = useState([]);
+    
+    const dispatch = useDispatch();
     const [count, setCount] = useState(1);
+
+    const getAllMovies = () => {
+        getAllFilms(count).then((allMovies) => dispatch(getMovies(allMovies.results)))
+        .catch(function(err){
+            console.log(err);
+        })
+    }
+
+    useEffect(() => {
+        getAllMovies();
+    });
 
     // paging functions
     const nextPage = () => {
@@ -18,30 +30,18 @@ const RenderApi = () => {
 
     const previousPage = () => {
         let pagina = count - 1;
-
         if (pagina === 0) return null;
         setCount(pagina);
     }
-
-    const getAllMovies = async () => {
-        const resultData = await getAllFilms(count)
-        setMovies(resultData.results);
-    }
-
-    useEffect(() => {
-        getAllMovies();
-    }, [count]);
 
     return (
         <fragment id="top">
             <header className="title-films">
                 <label>on billboard 🎬</label>
             </header>
-            <div className="list">
-                {movies.map((movie) => {
-                    return <Films movie={movie}/>
-                })}
-            </div>
+            <article className="list">
+                <Films />
+            </article>
             <Pagination
                 previousPage={previousPage}
                 nextPage={nextPage}
