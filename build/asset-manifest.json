@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/filmsweb/build/static/css/main.477256e8.chunk.css",
+    "main.js": "/filmsweb/build/static/js/main.ed942edb.chunk.js",
+    "main.js.map": "/filmsweb/build/static/js/main.ed942edb.chunk.js.map",
+    "runtime-main.js": "/filmsweb/build/static/js/runtime-main.ab8fce6a.js",
+    "runtime-main.js.map": "/filmsweb/build/static/js/runtime-main.ab8fce6a.js.map",
+    "static/js/2.e4cd6c31.chunk.js": "/filmsweb/build/static/js/2.e4cd6c31.chunk.js",
+    "static/js/2.e4cd6c31.chunk.js.map": "/filmsweb/build/static/js/2.e4cd6c31.chunk.js.map",
+    "index.html": "/filmsweb/build/index.html",
+    "static/css/main.477256e8.chunk.css.map": "/filmsweb/build/static/css/main.477256e8.chunk.css.map",
+    "static/js/2.e4cd6c31.chunk.js.LICENSE.txt": "/filmsweb/build/static/js/2.e4cd6c31.chunk.js.LICENSE.txt",
+    "static/media/cine.c7ad38d5.svg": "/filmsweb/build/static/media/cine.c7ad38d5.svg",
+    "static/media/about.css": "/filmsweb/build/static/media/claqueta.8abc2d92.svg",
+    "static/media/fontello.css": "/filmsweb/build/static/media/fontello.fcc772d9.woff",
+    "static/media/img-error.84046f64.svg": "/filmsweb/build/static/media/img-error.84046f64.svg",
+    "static/media/logo-web-film-nav.dcab8ae8.svg": "/filmsweb/build/static/media/logo-web-film-nav.dcab8ae8.svg",
+    "static/media/logo-web-film.98c9cbe2.svg": "/filmsweb/build/static/media/logo-web-film.98c9cbe2.svg",
+    "static/media/user.efadb13d.webp": "/filmsweb/build/static/media/user.efadb13d.webp"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ab8fce6a.js",
+    "static/js/2.e4cd6c31.chunk.js",
+    "static/css/main.477256e8.chunk.css",
+    "static/js/main.ed942edb.chunk.js"
+  ]
+}

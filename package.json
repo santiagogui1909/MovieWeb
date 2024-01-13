@@ -2,6 +2,7 @@
   "name": "filmsweb",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://santiagogui1909.github.io/filmsweb/build",
   "dependencies": {
     "@sweetalert2/theme-dark": "^5.0.0",
     "@testing-library/user-event": "^12.8.3",
